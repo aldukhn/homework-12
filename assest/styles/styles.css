@@ -227,8 +227,8 @@ textarea {
     }
 
     .gallery {
-        grid-template-columns: 1fr 1fr;
-        /* 2 columns for small screens */
+        grid-template-columns: 1fr;
+        /* 1 columns for small screens */
     }
 
 }
