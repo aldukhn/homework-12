@@ -1,0 +1,234 @@
+h2 {
+    color: azure;
+    background-color: rebeccapurple;
+    font-family: sans-serif;
+    text-align: center;
+    border-left: 5px solid red;
+
+}
+
+
+body {
+    background-color: #E2FFFF;
+    color: #15495E;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    color: #E2FFFF;
+    line-height: 200%;
+    font-family: sans-serif;
+    text-indent: 1em;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.footer {
+    text-align: center;
+    background-color: #237B7B;
+    color: white;
+    border-color: #40407A;
+    border-width: 0px 50px 0px 50px;
+    border-style: solid;
+
+}
+
+nav {
+    /* text-align: center; */
+    font-weight: bold;
+    /* padding: 1em; */
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-width: 3px;
+    border-style: outset;
+    padding: 1em;
+    border-color: #CCCCCC;
+    margin-bottom: 1em;
+    width: 70px;
+}
+
+nav ul li a:visited {
+    color: #237B7B;
+}
+
+nav ul li a:hover {
+    color: #40407A;
+    border-width: 3px;
+    border-style: inset;
+    border-color: #333333;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+header {
+    /* padding-top: 50px;
+    padding-bottom: 20px; */
+    padding-left: 2em;
+    background-color: #80CBC4;
+    /* height: 80px; */
+    height: 150px;
+    background-image: url("../img/lilyheader.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+
+
+}
+
+#wrapper {
+    background-color: #f5f5f5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 400px;
+    max-width: 1280px;
+}
+
+main {
+    padding-right: 2em;
+    padding-left: 2em;
+
+}
+
+img {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#hero {
+    display: block;
+    text-align: center;
+}
+
+.nav-logo {
+    margin: auto;
+}
+
+#hero img {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+.row {
+    display: flex;
+
+}
+
+.col {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    border: solid 1px #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* contact form styles */
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    grid-column: 1;
+    text-align: right;
+}
+
+input,
+select,
+textarea {
+    grid-column: 2;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #2ecc71;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 50%;
+}
+
+/* Button hover styles */
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Button focus styles */
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.4);
+}
+
+/* Button disabled styles */
+.submit-btn[disabled] {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+
+/* Button loading styles */
+.submit-btn.loading {
+    background-color: #7f8c8d;
+    cursor: progress;
+}
+
+
+@media screen and (max-width: 1100px) {
+    /* Whatever css you have here will be applied only when the screen
+    size is under 1100px*/
+
+    nav {
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns for small screens */
+    }
+
+}
